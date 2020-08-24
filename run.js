@@ -1,6 +1,18 @@
-// DOM (Document Object Model)
-const title = document.querySelector('#title'); //  querySelector : 노드의 첫번째 자식 반환
-title.innerText = 'Hi From JS';
-title.style.color = 'red';
-document.title = '💎 Vanilla JS';
-console.dir(title);
+const title = document.querySelector("#title");
+
+// Window Resize
+function handleResize (event){
+    console.log(event);
+    console.log("I have been resized.");
+}
+
+window.addEventListener("resize", handleResize); // 이벤트를 다룰 함수 추가
+// handleResize() -> 즉시 실행
+// handleResize -> 윈도우 사이즈 변경 시 실행
+
+function handleClick (){
+    title.style.color = "blue";
+}
+
+// Click Event
+title.addEventListener("click", handleClick);
