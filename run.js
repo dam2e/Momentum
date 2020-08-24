@@ -1,7 +1,7 @@
 // Array
-let b = a - 5;	const daysOfWeek = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
-a = 4;	console.log(daysOfWeek[2]);
-console.log(b,a);
+const daysOfWeek = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+console.log(daysOfWeek[2]);
+
 // Object
 const myInfo = {
     name: 'Dami',
@@ -22,4 +22,4 @@ const myInfo = {
 };
 myInfo.gender = 'Female';
 console.log(myInfo.gender);
-console.log(myInfo); 
+console.log(myInfo);
