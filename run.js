@@ -1,19 +1,24 @@
 const title = document.querySelector("#title");
-const BASE_COLOR = "rgb(41, 128, 185)";
-const OTHER_COLOR = "rgb(231, 76, 60)";
+const CLICKED_CLASS = "clicked";
 
-// Color Toggle
+/*
 function handleClick (){
-    const currentColor = title.style.color;
-    if ( currentColor === BASE_COLOR ){
-        title.style.color = OTHER_COLOR;
+    const hassClass = title.classList.contains(CLICKED_CLASS);
+    if (!hassClass){
+        title.classList.add(CLICKED_CLASS);
     } else {
-        title.style.color = BASE_COLOR;
+        title.classList.remove(CLICKED_CLASS);
     }
 }
+*/
+
+function handleClick (){
+    title.classList.toggle(CLICKED_CLASS); // toggle 함수 안에 있는 값을 체크 함.
+}
+
+// Color Toggle
 
 function init(){
-    title.style.color = BASE_COLOR;
     title.addEventListener("click", handleClick);
 }
 
