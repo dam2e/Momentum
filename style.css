@@ -1,12 +1,32 @@
 @charset "utf-8";
 
-body{
-  background-color:#ecf0f1;
+body {
+  background-color: #ecf0f1;
 }
-h1{
-  color:#34495e;
-  transition:0.3s;
+h1 {
+  color: #34495e;
+  transition: 0.3s;
 }
-.clicked{
-  color:#7f8c8d;
+h4 {
+  font-size: 20px;
+  color: #1fbf8b;
+}
+
+.clicked {
+  color: #7f8c8d;
+}
+
+.js-form,
+.js-greeting {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+.js-form input[type="text"] {
+  padding: 15px;
+  border: 1px solid #ccc;
+  font-size: 15px;
 }
