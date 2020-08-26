@@ -15,7 +15,7 @@ function getTime (){
 
 function init (){
     getTime();
-    setInterval(getTime,1000) // 인자 : 함수, 실행 시간 간격
+    setInterval(getTime,1000) // 파라미터 : 함수, 실행 시간 간격
 }
 
 init();
