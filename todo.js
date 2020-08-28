@@ -4,15 +4,30 @@ const toDoForm = document.querySelector(".js-toDoForm"),
 
 const TODOS_LS = "toDos";
 
+const toDos = [];
+
+function saveToDos (){
+    // JSON.stringify() -> object를 string 으로 변환
+    localStorage.setItem("TODOS_LS", JSON.stringify(toDos));
+}
+
 function paintToDo(text){
     const li = document.createElement("li");
     const span = document.createElement("span");
     const delBtn = document.createElement("button");
+    const newId = toDos.length + 1;
     delBtn.innerText ="❌";
     span.innerText = text;
     li.appendChild(span);
     li.appendChild(delBtn);
+    li.id = newId;
     toDoList.appendChild(li);
+    const toDoObj = {
+        text: text,
+        id: newId
+    }
+    toDos.push(toDoObj);
+    saveToDos();
 }
 
 function handleSubmit (event){
@@ -23,9 +38,12 @@ function handleSubmit (event){
 }
 
 function loadToDos (){
-    const toDos = localStorage.getItem("TODOS_LS");
-    if (toDos!==null){
-
+    const loadedToDos = localStorage.getItem("TODOS_LS");
+    if (loadedToDos!==null){
+        const parsedToDos = JSON.parse(loadedToDos); // string을 object로 변환
+        parsedToDos.forEach(function(toDo){ // 함수는 parsedToDos에 있는 것들을 각각 한번씩 실행해 주므로 toDo라고 지칭한다.
+            paintToDo(toDo.text);
+        });
     }
 }
 
