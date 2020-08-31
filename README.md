@@ -16,3 +16,4 @@ A clone of the productivity chrome app [Momentum](https://chrome.google.com/webs
 
 ## Try it out
 
+[github.com/dam2e/Momentum](https://github.com/dam2e/Momentum/index.html)
