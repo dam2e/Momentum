@@ -1,9 +1,18 @@
-# 💎 Vanilla JS
+# 💎 MOMENTUM
 
-#### 데이터 구성
+![momonton](images\momonton.jpg)
 
-| Type          | When                             |
-| ------------- | -------------------------------- |
-| Array (배열)  | DB에서 가져온 리스트 데이터일 때 |
-| Object (객체) | 데이터를 합쳐서 사용할 때        |
+A clone of the productivity chrome app [Momentum](https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca) on Vanilla JS
+
+
+
+## Features
+
+- [x] Clock
+- [x] To Do List
+- [x] Weather
+- [x] Daily Photo
+- [x] Offline Support
+
+## Try it out
 
