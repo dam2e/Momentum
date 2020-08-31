@@ -1,0 +1,116 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;600;800&family=Noto+Sans+KR:wght@300;400&display=swap');
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+#wrap {
+  display:table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.content {
+  display: table-cell;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  vertical-align: middle;
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: #34495e;
+  transition: 0.3s;
+  font-size: 140px;
+  color: #fff;
+  font-weight: 800;
+}
+h4 {
+  height: 107px;
+  font-size: 50px;
+  line-height: 107px;
+}
+
+.clicked {
+  color: #7f8c8d;
+}
+
+.js-form,
+.js-greeting {
+  display: none;
+}
+
+.js-form {
+  margin-bottom: 20px;
+}
+
+.js-form input {
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+
+.showing {
+  display: block;
+}
+
+.js-toDoList {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  min-height: 130px;
+  vertical-align: top;
+}
+
+.js-toDoList li {
+  position: relative;
+  padding-left: 23px;
+  list-style: none;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.js-toDoList li span {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.js-toDoList li button {
+  position: absolute;
+  left: 0;
+  top: 5.5px;
+}
+
+button {
+  background-color: transparent;
+  border-width: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -10;
+  width: 100%;
+  height: 100vh;
+  animation: fadeIn 0.5s linear forwards;
+}
+
+.js-weather {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  color: rgba(255,255,255,0.6);
+  font-weight: 300;
+}

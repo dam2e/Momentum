@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{
+    margin:0;
+    padding:0;
+    background:transparent;
+    border:0;
+    font-size:20px;
+    font-weight:600;
+    letter-spacing:-0.4px;
+    vertical-align:baseline;
+    box-sizing:border-box;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust:none;
+    -moz-text-size-adjust:none;
+    -ms-text-size-adjust:none;
+}
+
+body{
+    overflow-x:hidden;
+    font-family:'Noto Sans KR', Inconsolata, HelveticaNeue, DroidSans, sans-serif;
+    color:#fff;
+    line-height:1;
+    min-width:320px;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{ 
+    display:block;
+}
+
+li{
+    list-style:none;
+}
+
+input {
+    display: inline-block;
+    padding: 15px 0;
+    background-color: transparent;
+    border-width: 0;
+    border-bottom: 3px solid #fff;
+    font-family:'Noto Sans KR', Inconsolata, HelveticaNeue, DroidSans, sans-serif;
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    outline: 0;
+    vertical-align: top;
+}
+
+input::placeholder {
+    color: rgba(255,255,255,0.8);
+}
+
+button {
+    padding: 0;
+}
