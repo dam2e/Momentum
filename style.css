@@ -2,6 +2,7 @@
 
 body {
   background-color: #000;
+  color: #fff;
 }
 h1 {
   color: #34495e;
@@ -20,10 +21,6 @@ h4 {
 .js-form,
 .js-greeting {
   display: none;
-}
-
-.js-toDoList li {
-  color: #fff;
 }
 
 .showing {
